@@ -21,7 +21,7 @@ class DownFacingCamera(Node):
   def __init__(self):
     super().__init__('DownFacingCameraNode')
     # Get the default path (need to remove src)
-    self.dir_path = os.path.dirname(os.path.realpath(__file__))
+    self.dir_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
     self.dir_path = self.dir_path + "/data/"
 
     # Get image name and load it from data folder
